@@ -16,42 +16,5 @@ Random forest classifier performed the best when compared to logistic regression
 
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/c85ff0b8-63fe-4074-9585-86b0db3bb0e2" />
 
-Optimized settlements using greedy approach-based graph algorithm
-<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/e4bda51a-1454-4896-ac7e-1587aad21bc0" />
-
-Smart Settlement Algorithm
 An optimized greedy graph algorithm is used to settle debts between users efficiently, minimizing the number of transactions needed.
-
-🧰 Tools Used
-VS Code – Primary code editor
-
-Git & GitHub – Version control and collaboration
-
-📊 Model Performance
-🔍 Random Forest vs Logistic Regression vs SVM
-Random Forest gave the highest accuracy in categorizing expenses from receipt data.
-
-<img width="250" height="300" alt="Random Forest Chart" src="https://github.com/user-attachments/assets/3878705d-1ec0-48fd-ba3e-278b54f255d8" />
-🧾 OCR Receipt Capture
-<img width="250" height="300" alt="OCR Demo" src="https://github.com/user-attachments/assets/e6b1e520-2f72-4a8a-b198-c491438c9eff" /> <img width="250" height="300" alt="Receipt Image" src="https://github.com/user-attachments/assets/dc983b12-c58e-4f98-a163-aa751cdfe00b" />
-🤝 Expense Sharing Visualization
-<img width="250" height="300" alt="Expense Graph" src="https://github.com/user-attachments/assets/c85ff0b8-63fe-4074-9585-86b0db3bb0e2" />
-📉 Optimized Settlements Using Graph Algorithm
-<img width="250" height="300" alt="Debt Optimization Graph" src="https://github.com/user-attachments/assets/e4bda51a-1454-4896-ac7e-1587aad21bc0" />
-Let me know if you’d like this exported as a README.md file or want to add badges, a live demo link, or contributor info!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/e4bda51a-1454-4896-ac7e-1587aad21bc0" />
