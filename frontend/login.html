@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-light: #FFE4EC;
+      --pink-med:   #FFC1E3;
+      --pink-dark:  #E6398F;
+      --white:      #FFF;
+      --gray:       #666;
+      --background: #f7f5f8;
+      font-size: 18px;
+    }
+    .page-header{
+  position:absolute;
+  top:40px;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  pointer-events:none;
+}
+
+.page-title{
+  font-size:2.2rem;
+  font-weight:700;
+  color:var(--pink-dark);
+  text-shadow:0 2px 4px rgba(0,0,0,0.15);
+  letter-spacing:1px;
+  margin-bottom:0.2rem;
+}
+
+.page-caption{
+  font-size:1rem;
+  font-weight:500;
+  color:var(--gray);
+  opacity:0.9;
+}
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', sans-serif;
+      background-size: 20px 20px;
+    }
+    .card {
+      position: relative;
+      width: 340px;
+      padding: 2rem 1.5rem;
+      background: var(--pink-light);
+      border: 4px solid var(--pink-med);
+      border-radius: 30px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    /* scalloped top border */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -4px; left: -4px; right: -4px;
+      height: 40px;
+      background: var(--pink-med);
+      border-top-left-radius: 36px 36px;
+      border-top-right-radius: 36px 36px;
+      box-shadow: inset 0 -4px var(--pink-light);
+    }
+    h1 {
+      margin-top: 0.5rem;
+      color: var(--pink-dark);
+      font-size: 2rem;
+      z-index: 1;
+      position: relative;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+      color: var(--gray);
+      font-size: 1rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      border: 2px solid var(--pink-med);
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    input:focus {
+      outline: none;
+      border-color: var(--pink-dark);
+      box-shadow: 0 0 5px var(--pink-med);
+    }
+    .btn {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1.2rem;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.1s;
+    }
+    .btn-login {
+      background: var(--pink-dark);
+      color: var(--white);
+    }
+    .btn-login:hover { transform: translateY(-2px); }
+    .btn-create {
+      background: var(--white);
+      color: var(--pink-dark);
+      border: 2px dashed var(--pink-med);
+    }
+    .btn-create:hover { transform: translateY(-2px); background: var(--pink-med); color: var(--white); }
+    /* little floral doodles */
+    .doodle {
+      position: absolute;
+      width: 40px; height: 40px;
+      fill: var(--pink-dark);
+    }
+    .doodle.flower { top: -20px; left: -20px; }
+    .doodle.leaf   { bottom: -20px; right: -20px; transform: rotate(45deg); }
+  </style>
+  <script>
+    function login() {
+      const groupName = document.getElementById('groupName').value;
+      const key = document.getElementById('key').value;
+      fetch('http://localhost:5000/api/login', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ group_name: groupName, key })
+      })
+      .then(r=>r.json()).then(data=>{
+        if(data.success){
+          localStorage.setItem('groupId', data.group_id);
+          localStorage.setItem('groupName', groupName);
+          window.location.href = 'main_page.html';
+        } else alert(data.error);
+      }).catch(e=>console.error(e));
+    }
+    function createGroup() {
+      window.location.href = 'create-group.html';
+    }
+  </script>
+</head>
+<body>
+  <header class="page-header">
+  <h2 class="page-title">Expense Splitter</h2>
+  <p class="page-caption">Track, split, and settle group spends in a snap ✨</p>
+</header>
+
+  <div class="card">
+    <!-- Top-left flower doodle -->
+    <svg class="doodle flower" viewBox="0 0 64 64"><circle cx="32" cy="32" r="6"/><path d="M32 10a4 4 0 014 4v6a4 4 0 01-8 0V14a4 4 0 014-4zM32 54a4 4 0 014-4h6a4 4 0 010 8h-6a4 4 0 01-4-4zM10 32a4 4 0 014-4h6a4 4 0 010 8h-6a4 4 0 01-4-4zM54 32a4 4 0 01-4-4v-6a4 4 0 018 0v6a4 4 0 01-4 4z"/></svg>
+    <!-- Bottom-right leaf doodle -->
+    <svg class="doodle leaf" viewBox="0 0 64 64"><path d="M8 56C24 40 56 8 56 8S24 8 8 24s16 32 16 32z"/></svg>
+
+    <h1>Login</h1>
+
+    <label for="groupName">Group Name</label>
+    <input type="text" id="groupName" placeholder="Enter group name" required />
+
+    <label for="key">Group Key</label>
+    <input type="password" id="key" placeholder="Enter key" required />
+
+    <button class="btn btn-login" onclick="login()">Log In</button>
+    <button class="btn btn-create" onclick="createGroup()">Create Group</button>
+  </div>
+</body>
+</html>

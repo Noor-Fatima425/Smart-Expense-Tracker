@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-light: #FFE4EC;
+      --pink-med:   #FFC1E3;
+      --pink-dark:  #E6398F;
+      --white:      #FFF;
+      --gray:       #666;
+      --background: #f7f5f8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--background);
+      font-family: 'Quicksand', sans-serif;
+      background-size: 20px 20px;
+      padding: 2rem;
+    }
+    .card {
+      position: relative;
+      max-width: 400px;
+      margin: 3rem auto;
+      padding: 2.5rem 2rem;
+      background: var(--white);
+      border: 4px solid var(--pink-med);
+      border-radius: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -4px; left: -4px; right: -4px;
+      height: 40px;
+      background: var(--pink-med);
+      border-top-left-radius: 36px 36px;
+      border-top-right-radius: 36px 36px;
+      box-shadow: inset 0 -4px var(--white);
+    }
+    h1 {
+      margin-top: 0.5rem;
+      color: var(--pink-dark);
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+      color: var(--gray);
+      font-size: 1rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      border: 2px solid var(--pink-med);
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    input:focus {
+      outline: none;
+      border-color: var(--pink-dark);
+      box-shadow: 0 0 5px var(--pink-med);
+    }
+    .btn {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1.2rem;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.1s;
+    }
+    .btn-create {
+      background: var(--pink-dark);
+      color: var(--white);
+    }
+    .btn-create:hover { transform: translateY(-2px); }
+
+    /* doodles */
+    .doodle {
+      position: absolute;
+      width: 40px; height: 40px;
+      fill: var(--pink-dark);
+    }
+    .doodle.flower { top: -20px; left: -20px; }
+    .doodle.leaf   { bottom: -20px; right: -20px; transform: rotate(45deg); }
+
+    /* error message styling */
+    .error {
+      margin-top: 0.8rem;
+      color: #b00020;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+  async function createGroup () {
+    const nameInput     = document.getElementById('groupName');
+    const keyInput      = document.getElementById('key');
+    const confirmInput  = document.getElementById('confirmKey');
+    const errorDiv      = document.getElementById('errorMsg');
+
+    const groupName = nameInput.value.trim();
+    const key       = keyInput.value.trim();
+    const confirm   = confirmInput.value.trim();
+    errorDiv.textContent = '';
+
+    /* ---- basic client‑side validation ---- */
+    if (!groupName || !key || !confirm) {
+      errorDiv.textContent = 'All fields are required.';
+      return;
+    }
+    if (key !== confirm) {
+      errorDiv.textContent = 'The keys do not match.';
+      confirmInput.focus();
+      return;
+    }
+
+    /* ---- optional local duplicate check ---- */
+    const stored = localStorage.getItem('allGroupNames') || '';
+    const names  = stored.split(',').map(n => n.trim().toLowerCase()).filter(Boolean);
+    if (names.includes(groupName.toLowerCase())) {
+      errorDiv.textContent = 'Group name already exists (frontend check).';
+      return;
+    }
+
+    /* ---- send to backend ---- */
+    try {
+      const res  = await fetch('http://localhost:5000/api/createGroup', {
+        method  : 'POST',
+        headers : { 'Content-Type': 'application/json' },
+        body    : JSON.stringify({ group_name: groupName, key })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        errorDiv.textContent = data.error || 'Group creation failed.';
+        return;
+      }
+
+      /* ---- success ---- */
+      names.push(groupName.toLowerCase());
+      localStorage.setItem('allGroupNames', names.join(','));
+      localStorage.setItem('groupName', groupName);
+      localStorage.setItem('groupId'  , data.group_id);
+      window.location.href = 'main_page.html';
+
+    } catch (err) {
+      console.error(err);
+      errorDiv.textContent = 'Error connecting to server.';
+    }
+  }
+</script>
+
+</head>
+<body>
+  <div class="card">
+    <svg class="doodle flower" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="6"/>
+      <path d="M32 10a4 4 0 014 4v6a4 4 0 01-8 0V14a4 4 0 014-4zM32 54a4 4 0 014-4h6a4 4 0 010 8h-6a4 4 0 01-4-4zM10 32a4 4 0 014-4h6a4 4 0 010 8h-6a4 4 0 01-4-4zM54 32a4 4 0 01-4-4v-6a4 4 0 018 0v6a4 4 0 01-4 4z"/>
+    </svg>
+    <svg class="doodle leaf" viewBox="0 0 64 64">
+      <path d="M8 56C24 40 56 8 56 8S24 8 8 24s16 32 16 32z"/>
+    </svg>
+
+    <h1>Create Group</h1>
+
+    <label for="groupName">Group Name</label>
+    <input type="text" id="groupName" placeholder="Enter group name" />
+
+    <label for="key">Group Key</label>
+    <input type="password" id="key" placeholder="Enter key" />
+     
+     <label for="confirmKey">Confirm Key</label>
+  <input type="password" id="confirmKey" placeholder="Confirm key" required />
+
+    <button class="btn btn-create" onclick="createGroup()">Create Group</button> <br><br> Remember your group name and key for future purposes.
+    <div id="errorMsg" class="error"></div>
+  </div>
+</body>
+</html>

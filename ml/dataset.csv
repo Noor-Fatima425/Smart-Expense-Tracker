@@ -1,0 +1,391 @@
+description,category
+Travel expense #1,Travel
+Travel expense #2,Travel
+Travel expense #3,Travel
+Travel expense #4,Travel
+Travel expense #5,Travel
+Travel expense #6,Travel
+Travel expense #7,Travel
+Travel expense #8,Travel
+Travel expense #9,Travel
+Travel expense #10,Travel
+Travel expense #11,Travel
+Travel expense #12,Travel
+Travel expense #13,Travel
+Travel expense #14,Travel
+Travel expense #15,Travel
+Travel expense #16,Travel
+Travel expense #17,Travel
+Travel expense #18,Travel
+Travel expense #19,Travel
+Travel expense #20,Travel
+Travel expense #21,Travel
+Travel expense #22,Travel
+Travel expense #23,Travel
+Travel expense #24,Travel
+Travel expense #25,Travel
+Travel expense #26,Travel
+Travel expense #27,Travel
+Travel expense #28,Travel
+Travel expense #29,Travel
+Travel expense #30,Travel
+Food and dining #1,Food
+Food and dining #2,Food
+Food and dining #3,Food
+Food and dining #4,Food
+Food and dining #5,Food
+Food and dining #6,Food
+Food and dining #7,Food
+Food and dining #8,Food
+Food and dining #9,Food
+Food and dining #10,Food
+Food and dining #11,Food
+Food and dining #12,Food
+Food and dining #13,Food
+Food and dining #14,Food
+Food and dining #15,Food
+Food and dining #16,Food
+Food and dining #17,Food
+Food and dining #18,Food
+Food and dining #19,Food
+Food and dining #20,Food
+Food and dining #21,Food
+Food and dining #22,Food
+Food and dining #23,Food
+Food and dining #24,Food
+Food and dining #25,Food
+Food and dining #26,Food
+Food and dining #27,Food
+Food and dining #28,Food
+Food and dining #29,Food
+Food and dining #30,Food
+Grocery purchase #1,Groceries
+Grocery purchase #2,Groceries
+Grocery purchase #3,Groceries
+Grocery purchase #4,Groceries
+Grocery purchase #5,Groceries
+Grocery purchase #6,Groceries
+Grocery purchase #7,Groceries
+Grocery purchase #8,Groceries
+Grocery purchase #9,Groceries
+Grocery purchase #10,Groceries
+Grocery purchase #11,Groceries
+Grocery purchase #12,Groceries
+Grocery purchase #13,Groceries
+Grocery purchase #14,Groceries
+Grocery purchase #15,Groceries
+Grocery purchase #16,Groceries
+Grocery purchase #17,Groceries
+Grocery purchase #18,Groceries
+Grocery purchase #19,Groceries
+Grocery purchase #20,Groceries
+Grocery purchase #21,Groceries
+Grocery purchase #22,Groceries
+Grocery purchase #23,Groceries
+Grocery purchase #24,Groceries
+Grocery purchase #25,Groceries
+Grocery purchase #26,Groceries
+Grocery purchase #27,Groceries
+Grocery purchase #28,Groceries
+Grocery purchase #29,Groceries
+Grocery purchase #30,Groceries
+Entertainment cost #1,Entertainment
+Entertainment cost #2,Entertainment
+Entertainment cost #3,Entertainment
+Entertainment cost #4,Entertainment
+Entertainment cost #5,Entertainment
+Entertainment cost #6,Entertainment
+Entertainment cost #7,Entertainment
+Entertainment cost #8,Entertainment
+Entertainment cost #9,Entertainment
+Entertainment cost #10,Entertainment
+Entertainment cost #11,Entertainment
+Entertainment cost #12,Entertainment
+Entertainment cost #13,Entertainment
+Entertainment cost #14,Entertainment
+Entertainment cost #15,Entertainment
+Entertainment cost #16,Entertainment
+Entertainment cost #17,Entertainment
+Entertainment cost #18,Entertainment
+Entertainment cost #19,Entertainment
+Entertainment cost #20,Entertainment
+Entertainment cost #21,Entertainment
+Entertainment cost #22,Entertainment
+Entertainment cost #23,Entertainment
+Entertainment cost #24,Entertainment
+Entertainment cost #25,Entertainment
+Entertainment cost #26,Entertainment
+Entertainment cost #27,Entertainment
+Entertainment cost #28,Entertainment
+Entertainment cost #29,Entertainment
+Entertainment cost #30,Entertainment
+Utility payment #1,Utilities
+Utility payment #2,Utilities
+Utility payment #3,Utilities
+Utility payment #4,Utilities
+Utility payment #5,Utilities
+Utility payment #6,Utilities
+Utility payment #7,Utilities
+Utility payment #8,Utilities
+Utility payment #9,Utilities
+Utility payment #10,Utilities
+Utility payment #11,Utilities
+Utility payment #12,Utilities
+Utility payment #13,Utilities
+Utility payment #14,Utilities
+Utility payment #15,Utilities
+Utility payment #16,Utilities
+Utility payment #17,Utilities
+Utility payment #18,Utilities
+Utility payment #19,Utilities
+Utility payment #20,Utilities
+Utility payment #21,Utilities
+Utility payment #22,Utilities
+Utility payment #23,Utilities
+Utility payment #24,Utilities
+Utility payment #25,Utilities
+Utility payment #26,Utilities
+Utility payment #27,Utilities
+Utility payment #28,Utilities
+Utility payment #29,Utilities
+Utility payment #30,Utilities
+Shopping transaction #1,Shopping
+Shopping transaction #2,Shopping
+Shopping transaction #3,Shopping
+Shopping transaction #4,Shopping
+Shopping transaction #5,Shopping
+Shopping transaction #6,Shopping
+Shopping transaction #7,Shopping
+Shopping transaction #8,Shopping
+Shopping transaction #9,Shopping
+Shopping transaction #10,Shopping
+Shopping transaction #11,Shopping
+Shopping transaction #12,Shopping
+Shopping transaction #13,Shopping
+Shopping transaction #14,Shopping
+Shopping transaction #15,Shopping
+Shopping transaction #16,Shopping
+Shopping transaction #17,Shopping
+Shopping transaction #18,Shopping
+Shopping transaction #19,Shopping
+Shopping transaction #20,Shopping
+Shopping transaction #21,Shopping
+Shopping transaction #22,Shopping
+Shopping transaction #23,Shopping
+Shopping transaction #24,Shopping
+Shopping transaction #25,Shopping
+Shopping transaction #26,Shopping
+Shopping transaction #27,Shopping
+Shopping transaction #28,Shopping
+Shopping transaction #29,Shopping
+Shopping transaction #30,Shopping
+Electronics item #1,Electronics
+Electronics item #2,Electronics
+Electronics item #3,Electronics
+Electronics item #4,Electronics
+Electronics item #5,Electronics
+Electronics item #6,Electronics
+Electronics item #7,Electronics
+Electronics item #8,Electronics
+Electronics item #9,Electronics
+Electronics item #10,Electronics
+Electronics item #11,Electronics
+Electronics item #12,Electronics
+Electronics item #13,Electronics
+Electronics item #14,Electronics
+Electronics item #15,Electronics
+Electronics item #16,Electronics
+Electronics item #17,Electronics
+Electronics item #18,Electronics
+Electronics item #19,Electronics
+Electronics item #20,Electronics
+Electronics item #21,Electronics
+Electronics item #22,Electronics
+Electronics item #23,Electronics
+Electronics item #24,Electronics
+Electronics item #25,Electronics
+Electronics item #26,Electronics
+Electronics item #27,Electronics
+Electronics item #28,Electronics
+Electronics item #29,Electronics
+Electronics item #30,Electronics
+Beauty product expense #1,Beauty Products
+Beauty product expense #2,Beauty Products
+Beauty product expense #3,Beauty Products
+Beauty product expense #4,Beauty Products
+Beauty product expense #5,Beauty Products
+Beauty product expense #6,Beauty Products
+Beauty product expense #7,Beauty Products
+Beauty product expense #8,Beauty Products
+Beauty product expense #9,Beauty Products
+Beauty product expense #10,Beauty Products
+Beauty product expense #11,Beauty Products
+Beauty product expense #12,Beauty Products
+Beauty product expense #13,Beauty Products
+Beauty product expense #14,Beauty Products
+Beauty product expense #15,Beauty Products
+Beauty product expense #16,Beauty Products
+Beauty product expense #17,Beauty Products
+Beauty product expense #18,Beauty Products
+Beauty product expense #19,Beauty Products
+Beauty product expense #20,Beauty Products
+Beauty product expense #21,Beauty Products
+Beauty product expense #22,Beauty Products
+Beauty product expense #23,Beauty Products
+Beauty product expense #24,Beauty Products
+Beauty product expense #25,Beauty Products
+Beauty product expense #26,Beauty Products
+Beauty product expense #27,Beauty Products
+Beauty product expense #28,Beauty Products
+Beauty product expense #29,Beauty Products
+Beauty product expense #30,Beauty Products
+Medical and health #1,Health
+Medical and health #2,Health
+Medical and health #3,Health
+Medical and health #4,Health
+Medical and health #5,Health
+Medical and health #6,Health
+Medical and health #7,Health
+Medical and health #8,Health
+Medical and health #9,Health
+Medical and health #10,Health
+Medical and health #11,Health
+Medical and health #12,Health
+Medical and health #13,Health
+Medical and health #14,Health
+Medical and health #15,Health
+Medical and health #16,Health
+Medical and health #17,Health
+Medical and health #18,Health
+Medical and health #19,Health
+Medical and health #20,Health
+Medical and health #21,Health
+Medical and health #22,Health
+Medical and health #23,Health
+Medical and health #24,Health
+Medical and health #25,Health
+Medical and health #26,Health
+Medical and health #27,Health
+Medical and health #28,Health
+Medical and health #29,Health
+Medical and health #30,Health
+Fitness and gym #1,Fitness
+Fitness and gym #2,Fitness
+Fitness and gym #3,Fitness
+Fitness and gym #4,Fitness
+Fitness and gym #5,Fitness
+Fitness and gym #6,Fitness
+Fitness and gym #7,Fitness
+Fitness and gym #8,Fitness
+Fitness and gym #9,Fitness
+Fitness and gym #10,Fitness
+Fitness and gym #11,Fitness
+Fitness and gym #12,Fitness
+Fitness and gym #13,Fitness
+Fitness and gym #14,Fitness
+Fitness and gym #15,Fitness
+Fitness and gym #16,Fitness
+Fitness and gym #17,Fitness
+Fitness and gym #18,Fitness
+Fitness and gym #19,Fitness
+Fitness and gym #20,Fitness
+Fitness and gym #21,Fitness
+Fitness and gym #22,Fitness
+Fitness and gym #23,Fitness
+Fitness and gym #24,Fitness
+Fitness and gym #25,Fitness
+Fitness and gym #26,Fitness
+Fitness and gym #27,Fitness
+Fitness and gym #28,Fitness
+Fitness and gym #29,Fitness
+Fitness and gym #30,Fitness
+Gift purchase #1,Gifts
+Gift purchase #2,Gifts
+Gift purchase #3,Gifts
+Gift purchase #4,Gifts
+Gift purchase #5,Gifts
+Gift purchase #6,Gifts
+Gift purchase #7,Gifts
+Gift purchase #8,Gifts
+Gift purchase #9,Gifts
+Gift purchase #10,Gifts
+Gift purchase #11,Gifts
+Gift purchase #12,Gifts
+Gift purchase #13,Gifts
+Gift purchase #14,Gifts
+Gift purchase #15,Gifts
+Gift purchase #16,Gifts
+Gift purchase #17,Gifts
+Gift purchase #18,Gifts
+Gift purchase #19,Gifts
+Gift purchase #20,Gifts
+Gift purchase #21,Gifts
+Gift purchase #22,Gifts
+Gift purchase #23,Gifts
+Gift purchase #24,Gifts
+Gift purchase #25,Gifts
+Gift purchase #26,Gifts
+Gift purchase #27,Gifts
+Gift purchase #28,Gifts
+Gift purchase #29,Gifts
+Gift purchase #30,Gifts
+Education fee #1,Education
+Education fee #2,Education
+Education fee #3,Education
+Education fee #4,Education
+Education fee #5,Education
+Education fee #6,Education
+Education fee #7,Education
+Education fee #8,Education
+Education fee #9,Education
+Education fee #10,Education
+Education fee #11,Education
+Education fee #12,Education
+Education fee #13,Education
+Education fee #14,Education
+Education fee #15,Education
+Education fee #16,Education
+Education fee #17,Education
+Education fee #18,Education
+Education fee #19,Education
+Education fee #20,Education
+Education fee #21,Education
+Education fee #22,Education
+Education fee #23,Education
+Education fee #24,Education
+Education fee #25,Education
+Education fee #26,Education
+Education fee #27,Education
+Education fee #28,Education
+Education fee #29,Education
+Education fee #30,Education
+Miscellaneous expense #1,Miscellaneous
+Miscellaneous expense #2,Miscellaneous
+Miscellaneous expense #3,Miscellaneous
+Miscellaneous expense #4,Miscellaneous
+Miscellaneous expense #5,Miscellaneous
+Miscellaneous expense #6,Miscellaneous
+Miscellaneous expense #7,Miscellaneous
+Miscellaneous expense #8,Miscellaneous
+Miscellaneous expense #9,Miscellaneous
+Miscellaneous expense #10,Miscellaneous
+Miscellaneous expense #11,Miscellaneous
+Miscellaneous expense #12,Miscellaneous
+Miscellaneous expense #13,Miscellaneous
+Miscellaneous expense #14,Miscellaneous
+Miscellaneous expense #15,Miscellaneous
+Miscellaneous expense #16,Miscellaneous
+Miscellaneous expense #17,Miscellaneous
+Miscellaneous expense #18,Miscellaneous
+Miscellaneous expense #19,Miscellaneous
+Miscellaneous expense #20,Miscellaneous
+Miscellaneous expense #21,Miscellaneous
+Miscellaneous expense #22,Miscellaneous
+Miscellaneous expense #23,Miscellaneous
+Miscellaneous expense #24,Miscellaneous
+Miscellaneous expense #25,Miscellaneous
+Miscellaneous expense #26,Miscellaneous
+Miscellaneous expense #27,Miscellaneous
+Miscellaneous expense #28,Miscellaneous
+Miscellaneous expense #29,Miscellaneous
+Miscellaneous expense #30,Miscellaneous
