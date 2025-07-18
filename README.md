@@ -11,10 +11,13 @@ Additionally, tools include Visual Studio Code (VS Code) as the primary code edi
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/dc983b12-c58e-4f98-a163-aa751cdfe00b" />
 
 Random forest classifier performed the best when compared to logistic regression and SVM.
+
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/3878705d-1ec0-48fd-ba3e-278b54f255d8" />
 
+Expenses Summary. It can also be downloaded as a pdf:
 
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/c85ff0b8-63fe-4074-9585-86b0db3bb0e2" />
 
 An optimized greedy graph algorithm is used to settle debts between users efficiently, minimizing the number of transactions needed.
+
 <img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/e4bda51a-1454-4896-ac7e-1587aad21bc0" />
