@@ -5,6 +5,6 @@ For data storage, PostgreSQL was selected as the relational database management 
 A key highlight of the project is the integration of Artificial Intelligence, specifically Optical Character Recognition (OCR). This feature was implemented using Python along with the Tesseract OCR library, allowing the system to automatically extract text from uploaded receipts or images and convert them into expense entries with minimal user input.
 Python with libraries like scikit-learn, pandas, and joblib for model training and deployment. Flask is used to server the categorization API for integration with the main application.
 Additionally, tools include Visual Studio Code (VS Code) as the primary code editor for writing and organizing the codebase.
-<img width="433" height="573" alt="image" src="https://github.com/user-attachments/assets/e6b1e520-2f72-4a8a-b198-c491438c9eff" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/e6b1e520-2f72-4a8a-b198-c491438c9eff" />
 
 
